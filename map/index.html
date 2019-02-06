@@ -25,13 +25,13 @@
       crossorigin=""></script>
 
     <!-- modal -->
-    <link  href="app/script/vendor/vex-modal/vex.css" rel="stylesheet" type="text/css">
-    <link  href="app/script/vendor/vex-modal/vex-theme-plain.css" rel="stylesheet" type="text/css">
-    <script src="app/script/vendor/vex-modal/vex.combined.min.js"></script>
+    <link  href="app/vendor/vex-modal/vex.css" rel="stylesheet" type="text/css">
+    <link  href="app/vendor/vex-modal/vex-theme-plain.css" rel="stylesheet" type="text/css">
+    <script src="app/vendor/vex-modal/vex.combined.min.js"></script>
     <script>vex.defaultOptions.className = 'vex-theme-plain'</script>
 
     <!-- framework -->
-    <script src="app/script/vendor/zepto/zepto.js"></script>
+    <script src="app/vendor/zepto/zepto.js"></script>
 
 
     <!-- ========================================= APP MAIN -->
@@ -57,11 +57,10 @@
                 .bindPopup('<b>Base #1</b><br>Description & contacts are written here<br><br>Friendly Buses: <b>5</b>');
             L.marker([52.52, 13.4]).addTo(map)
                 .bindPopup('<b>Base #2</b><br>Description & contacts are written here<br><br>Friendly Buses: <b>2</b>');
-                //.openPopup();
 
             $('#logo').on('click', function(){
                 vex.dialog.alert({
-                    unsafeMessage: '<b>Description & Contacts</b><br> Hi! Description & contacts are written here.'
+                    unsafeMessage: '<b>Description & Contacts</b><br> Hi! Description & contacts are written here.<br><br>v0.1, 2019'
                 })
             })
         })
@@ -84,9 +83,23 @@
             left:     0;
 
             width:  160px;
-            height: 160px;
-            background-color: mediumaquamarine;
+            min-height: 160px;
+
+            background-color: #3288e6;
+            color: #fff;
+            text-align: center;
             cursor: pointer;
+        }
+        #logo:hover {
+            background-color: #2278d6;
+        }
+        #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .info-link {
+            text-decoration: underline;
+            padding: 0.5em 0;
         }
     </style>
 
@@ -98,7 +111,17 @@
 
     <h1>Friendly Buses</h1>
 
-    <div id="logo">MAP</div>
+    <div id="logo">
+        <div class="logo-img">
+            <img src="art/friendly-buses.svg" alt="Friendly Buses">
+        </div>
+        <div class="info-data">
+            <span></span>
+        </div>
+        <div class="info-link">
+            <span>Info & Contacts</span>
+        </div>
+    </div>
     <div id="map"></div>
 
 
