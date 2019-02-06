@@ -1,0 +1,90 @@
+<!doctype html><!-- app6011 -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ========================================= HEAD CONTENT -->
+
+
+    <title>ʕ⊙ᴥ⊙ʔ</title>
+
+
+    <!-- ========================================= APP LIBS -->
+
+
+    <!-- design font -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700&subset=cyrillic" rel="stylesheet">
+
+    <!-- leaflet maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+
+    <!-- framework -->
+    <script src="app/script/vendor/zepto/zepto.js"></script>
+
+
+    <!-- ========================================= APP MAIN -->
+
+
+    <link   href="app/style/app.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========================================= APP CUSTOM -->
+
+
+    <script>
+        $(function(){
+            var map = L.map('map', {
+                center: [51, 12],
+                zoom: 7
+            });
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([51, 12]).addTo(map)
+                .bindPopup('<b>Base #1</b><br>Description & contacts are written here<br><br>Friendly Buses: <b>5</b>');
+            L.marker([52.52, 13.4]).addTo(map)
+                .bindPopup('<b>Base #2</b><br>Description & contacts are written here<br><br>Friendly Buses: <b>2</b>');
+                //.openPopup();
+        })
+    </script>
+    <style>
+        #map {
+            position: fixed;
+            z-index:  1;
+            top:      0;
+            right:    0;
+            bottom:   0;
+            left:     0;
+        }
+        #logo {
+            position: fixed;
+            z-index:  2;
+            top:      auto;
+            right:    auto;
+            bottom:   0;
+            left:     0;
+            width:  160px;
+            height: 160px;
+            background-color: mediumaquamarine;
+        }
+    </style>
+
+
+    <!-- ========================================== ʕ⊙ᴥ⊙ʔ = -->
+    <!-- ========================================= END HEAD -->
+</head>
+<body class="body-wrap design-template">
+
+    <div id="logo">MAP</div>
+    <div id="map"></div>
+
+
+</body>
+</html>
