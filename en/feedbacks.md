@@ -1,10 +1,10 @@
 # Lesson 10 Feedback
 
-I had completed my first written task before that lesson. [a]
+I had completed my first written task before lesson. [a]
 I got ~30 errors in ~100 rows. [b]
-I had translated a known story. [c]
+I translated a known story. [c]
 Translation was easier than free writing. [d]
-Grammar rules betray me while I take care about meaning. [e,f]
+Grammar rules betray me while I am taking care about meaning. [e,f]
 I still have a lot of work to do. [g]
 
 My teacher is the greatest bonus. [h]
