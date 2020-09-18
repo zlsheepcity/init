@@ -1,3 +1,17 @@
+# Lessons 11, 12 Feedback
+
+Yesterday it was hard. It was the first lesson I had to speak.
+I failed both own story and a teacher's text.
+Those fails made me uncertain.
+At least I learnt the meaning of this/that/these/those words.
+
+At the lesson today I was doing tasks about a/the articles.
+I still have errors in each sentence.
+
+
+
+
+
 # Lesson 10 Feedback
 
 I had completed my first written task before lesson. [a]
